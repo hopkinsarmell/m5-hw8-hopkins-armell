@@ -13,12 +13,15 @@ for (let i = 0; i < boxElements.length; i++) {
     var boxElement = boxElements[i];
     console.log(boxElement)
     boxElement.onclick = function(event) {
-    }
-}
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
 // convert that value to a Number and store it to a variable
-
+var numWasClicked = Number(event.target.textContent)
+    //console.log(typeof boxNumWasClicked, 10))
+    //console.log(Number(boxNumWasClicked))
+    //console.log(+boxNumWasClicked)
+    }
+}
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
 
