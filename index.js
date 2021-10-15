@@ -20,10 +20,11 @@ var numWasClicked = Number(event.target.textContent)
     //console.log(typeof boxNumWasClicked, 10))
     //console.log(Number(boxNumWasClicked))
     //console.log(+boxNumWasClicked)
-    }
-}
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
+let winningBox = Math.floor(Math.random()*4)
+    }
+}
 
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
