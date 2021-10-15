@@ -26,7 +26,7 @@ let winningBox = Math.floor(Math.random()*4)
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
 // if the numbers match, increment wins and display the win count in div#wins
-if (numWasClicked == Math.floor(Math.random()*4)) {
+if (winningBox == Math.floor(Math.random()*4)) {
     document.getElementById('message').textContent = "YOU DID IT!"
     let w=wins+=1
     document.getElementById("wins").innerHTML="wins : " +w+ ""
