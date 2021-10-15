@@ -8,7 +8,13 @@ var messageEl = document.getElementById('message')
 var winsEl = document.getElementById('wins')
 var lossesEl = document.getElementById('losses')
 // target all .box elements and attach a click event listener to each one using a loop
-
+var boxElements = document.querySelectorAll('.box')
+for (let i = 0; i < boxElements.length; i++) {
+    var boxElement = boxElements[i];
+    console.log(boxElement)
+    boxElement.onclick = function(event) {
+    }
+}
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
 // convert that value to a Number and store it to a variable
