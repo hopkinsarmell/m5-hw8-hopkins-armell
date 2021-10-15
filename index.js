@@ -23,12 +23,20 @@ var numWasClicked = Number(event.target.textContent)
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
 let winningBox = Math.floor(Math.random()*4)
-    }
-}
-
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
 // if the numbers match, increment wins and display the win count in div#wins
-
+if (numWasClicked == Math.floor(Math.random()*4)) {
+    document.getElementById('message').textContent = "YOU DID IT!"
+    let w=wins+=1
+    document.getElementById("wins").innerHTML="wins : " +w+ ""
+  } else {
 // if the numbers don't match, change the div#message element's text to a random losing message from the array above
 // if the numbers don't match, increment losses and display the loss count in div#losses
+var randomIndex = Math.floor(Math.random()*3)
+        document.getElementById('message').textContent = messages[randomIndex]
+        let l=losses+=1
+        document.getElementById("losses").innerHTML="losses : " +l+ ""
+      }
+      }
+}
