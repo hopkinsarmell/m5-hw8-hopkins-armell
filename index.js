@@ -4,7 +4,9 @@ var messages = ['try again', 'better luck next time', 'not quite right...']
 var wins = 0
 var losses = 0
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
-
+var messageEl = document.getElementById('message')
+var winsEl = document.getElementById('wins')
+var lossesEl = document.getElementById('losses')
 // target all .box elements and attach a click event listener to each one using a loop
 
 // within each click event...
