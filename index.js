@@ -29,14 +29,14 @@ let winningBox = Math.floor(Math.random()*4)
 if (winningBox == Math.floor(Math.random()*4)) {
     messageEl = "YOU DID IT!"
     let w=wins+=1
-    winsEl.innerHTML="wins : " +w+ ""
+    winsEl.innerHTML="wins : " +w
   } else {
 // if the numbers don't match, change the div#message element's text to a random losing message from the array above
 // if the numbers don't match, increment losses and display the loss count in div#losses
 var randomIndex = Math.floor(Math.random()*3)
         messageEl.textContent = messages[randomIndex]
         let l=losses+=1
-        lossesEl.innerHTML="losses : " +l+ ""
+        lossesEl.innerHTML="losses : " +l
       }
       }
 }
