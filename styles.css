@@ -17,4 +17,59 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
   font-family: 'Bebas Neue', Impact, sans-serif;
+  color:var(--primary-color);
+  text-align: center;
+}
+
+header {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 3.9rem;
+  padding: 40px;
+}
+
+p#message {
+  font-size: 1.4rem;
+  margin: 23px;
+}
+
+.score {
+  display: inline-flex;
+  font-size: 1.6rem;
+}
+
+#wins, #losses {
+  margin-top: 15px;
+}
+
+#losses {
+  margin-left: 26px;
+}
+
+div#box-1, div#box-2, div#box-3 {
+  text-align: center;
+  padding: 20px;
+  border: 14px solid #6003c3;
+  border-radius: 13px;
+  max-width: 107px;
+  font-size: 4rem;
+  box-shadow: 19px 20px 22px -16px #000000b3;
+  margin: 13px auto;
+}
+
+div#box-1 {
+  background: var(--box-color-1);
+}
+
+div#box-2 {
+  background: var(--box-color-2);
+}
+
+div#box-3 {
+  background: var(--box-color-3);
 }
