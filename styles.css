@@ -27,10 +27,10 @@ header {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 100;
-  line-height: 3.9rem;
-  padding: 40px;
+  line-height: 4.9rem;
+  padding: 40px 0px;
 }
 
 p#message {
@@ -72,4 +72,24 @@ div#box-2 {
 
 div#box-3 {
   background: var(--box-color-3);
+}
+
+@media (min-width: 720px) {
+
+  p#message {
+    font-size: 1.8rem;
+    margin: 23px;
+  }
+
+  .boxes {
+    display: flex;
+    max-width: 900px;
+    place-content: center;
+    margin: 0 auto;
+  }
+
+  div#box-1, div#box-2, div#box-3 {
+    padding: 15px 46px;
+    margin: 22px 43px;
+  }
 }
