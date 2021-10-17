@@ -93,3 +93,15 @@ div#box-3 {
     margin: 22px 43px;
   }
 }
+
+@media (min-width: 1024px) {
+  div#box-1, div#box-2, div#box-3 {
+    padding: 26px 70px;
+    font-size: 6rem;
+    margin: 22px 50px;
+  }
+
+  p#message {
+    margin-top: 30px;
+  }
+}
