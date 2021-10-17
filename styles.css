@@ -105,3 +105,14 @@ div#box-3 {
     margin-top: 30px;
   }
 }
+
+@media (min-width: 1920px) {
+  div#box-1, div#box-2, div#box-3 {
+    padding: 40px 115px;
+    font-size: 11rem;
+    margin: 22px 65px;
+  }
+  p#message, #wins, #losses {
+    font-size: 2rem;
+  }
+}
