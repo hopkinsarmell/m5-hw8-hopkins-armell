@@ -38,5 +38,5 @@ var randomIndex = Math.floor(Math.random()*3)
         let l=losses+=1
         lossesEl.textContent="losses : " + l
       }
-      }
+    }
 }
